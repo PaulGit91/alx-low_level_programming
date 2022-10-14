@@ -1,1 +1,1 @@
-This repository if for variables, if,else and while statements
+This repository is for variables, if, else and while statements
