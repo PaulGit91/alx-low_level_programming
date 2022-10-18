@@ -1,8 +1,10 @@
+/**
+ * file 1-alphabet.c
+ */
 #include "main.h"
 
 /**
- * main - print alphabet using _putchar
- * Return: Always 0
+ * print_alphabet - prints the alphabet in lowercase, followed by new line
 */
 void print_alphabet(void)
 {
