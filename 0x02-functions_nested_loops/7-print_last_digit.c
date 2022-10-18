@@ -12,7 +12,12 @@ int print_last_digit(int x)
 	if ((y >= 0) && (y <= 9))
 	{
 		_putchar(y + '0');
-		return (y);
 	}
+	else if (y < 0)
+	{
+		y *= -1;
+		_putchar(y + '0');
+	}
+	return (y);
 	return (0);
 }
