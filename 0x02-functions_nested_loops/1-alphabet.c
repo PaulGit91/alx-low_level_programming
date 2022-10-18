@@ -1,10 +1,7 @@
-/**
- * file 1-alphabet.c
- */
 #include "main.h"
 
 /**
- * print_alphabet - prints the alphabet in lowercase, followed by new line
+ * print_alphabet - prints the alphabet in lowercase using _putchar.
 */
 void print_alphabet(void)
 {
