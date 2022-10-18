@@ -13,6 +13,7 @@ void times_table(void)
 		_putchar('0');
 		for (j = 0; j <= 9; j++)
 		{
+			_putchar('0');
 			result = i * j;
 			_putchar(result);
 			_putchar(',');
