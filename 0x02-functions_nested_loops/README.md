@@ -1,0 +1,1 @@
+This repository focuses on functions and nested loops.
