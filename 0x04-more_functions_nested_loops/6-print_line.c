@@ -5,7 +5,7 @@
  */
 void print_line(int n)
 {
-	int m;
+	char m;
 
 	if (n > 0)
 	{
