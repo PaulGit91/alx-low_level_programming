@@ -1,0 +1,1 @@
+This direcotory is for pointers, arrays and strings
