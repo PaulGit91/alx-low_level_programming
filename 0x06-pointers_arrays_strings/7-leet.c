@@ -1,5 +1,5 @@
 include "main.h"
-0;276;0c/**
+/**
  * leet - encodes a string into 1337
  * @n: input
  * Return: the value of n
