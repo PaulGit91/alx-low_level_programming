@@ -1,5 +1,5 @@
 include "main.h"
-/**
+0;276;0c/**
  * leet - encodes a string into 1337
  * @n: input
  * Return: the value of n
@@ -7,7 +7,7 @@ include "main.h"
 char *leet(char *n)
 {
 	int x, y;
-	char s1[] = "aAaEoOtTlL";
+	char s1[] = "aAeEoOtTlL";
 	char s2[] = "4433007711";
 
 	for (x = 0; n[x] != '\0'; x++)
