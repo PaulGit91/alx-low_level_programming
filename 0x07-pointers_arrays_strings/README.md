@@ -1,0 +1,1 @@
+This repository is about pointers arrays and strings.
