@@ -1,1 +1,1 @@
-This repository is static libraries
+Repository for static libraries
