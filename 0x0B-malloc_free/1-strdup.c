@@ -19,8 +19,9 @@ char *_strdup(char *str)
 	while (str[x])
 	{
 		x++;
-		z = malloc(sizeof(char) * (x + 1));
 	}
+	z = malloc(sizeof(char) * (x + 1));
+
 	if (z == NULL)
 	{
 		return (NULL);
@@ -29,7 +30,8 @@ char *_strdup(char *str)
 	{
 		z[y] = str[y];
 		y++;
-		z[y + 1] = 0;
 	}
+	z[y + 1] = 0;
+
 	return (z);
 }
