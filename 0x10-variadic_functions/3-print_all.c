@@ -50,7 +50,7 @@ void print_string(va_list list)
  */
 void print_all(const char * const format, ...)
 {
-	print_t types[] = {
+        print_t types[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
@@ -58,8 +58,8 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 
-        int x = 0, y = 0;
 	va_list list;
+	int x = 0, y = 0;
 	char *separator = "";
 
 	va_start(list, format);
