@@ -1,6 +1,6 @@
+#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-#include "variadic_functions.h"
 /**
  * print_char - prints the char character
  * @list: the type
@@ -45,33 +45,32 @@ void print_string(va_list list)
 }
 /**
  * print_all - prints anything
- * @format: list of types of arguments passed to function
+ * @format: list of funcs of arguments passed to function
  * Return: nothing
  */
 void print_all(const char * const format, ...)
 {
-        print_t types[] = {
+	print_t funcs[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
-		{"s", print_string},
-		{NULL, NULL}
+		{"s", print_string}
 	};
 
-	va_list list;
 	int x = 0, y = 0;
+	va_list list;
 	char *separator = "";
 
 	va_start(list, format);
 
 	while (format && format[x])
 	{
-		while (types[y].print)
+		while (funcs[y].print)
 		{
-			if (format[x] == *types[y].print)
+			if (format[x] == *funcs[y].print)
 			{
 				printf("%s", separator);
-				types[y].f(list);
+				funcs[y].f(list);
 				separator = ", ";
 			}
 			y++;
