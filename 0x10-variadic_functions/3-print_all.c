@@ -50,7 +50,7 @@ void print_string(va_list list)
  */
 void print_all(const char * const format, ...)
 {
-	print_t funcs[] = {
+	prints_t funcs[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
