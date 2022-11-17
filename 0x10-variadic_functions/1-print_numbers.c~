@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include "variadic_functions.h"
+/**
+ * print_numbers - a function that prints numbers
+ * @n: integer to pass through function
+ * @separator: string to print between numbers
+ * Return: nothing if separator is NULL
+ */
