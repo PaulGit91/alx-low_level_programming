@@ -16,13 +16,14 @@ int _strlen(const char *s)
 	}
 	return (j);
 }
+
 /**
  * add_node - adds a new node at the beginning of list_t list
  * @head: address of node
  * @str: string to add
  * Return: address of new element, NULL if it failed
  */
-list_t *add_node_end(list_t **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
 	list_t *advanced;
 	int length = _strlen(str);
