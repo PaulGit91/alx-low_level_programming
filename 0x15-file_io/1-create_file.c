@@ -7,34 +7,32 @@
  * Return: If the function fails - -1.
  *         Otherwise - 1.
  */
-int create_file(const char *filengthame, char *text_content)
+int create_file(const char *filename, char *text_content)
 {
-	int length;
+	int len;
 	int fd, wr;
 
-	if (filengthame == NULL)
+	if (filename == NULL)
 	{
 		return (-1);
 	}
-
 	if (text_content == NULL)
 	{
-		fd = open(filengthame, O_WRONLY | O_CREAT, 0600);
+		fd = open(filename, O_WRONLY | O_CREAT, 0600);
 		if (fd == -1)
 		{
 			return (-1);
 		}
-		return (1);
+		return (-1);
 	}
-	fd = open(filengthame, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 	if (fd == -1)
 	{
 		return (-1);
 	}
-
-	for (length = 0; text_content[length]; length++)
+	for (len = 0; text_content[len]; len++)
 	{
-		wr = write(fd, text_content, length);
+		wr = write(fd, text_content, len);
 		if (wr == -1)
 		{
 			close(fd);
