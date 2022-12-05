@@ -12,10 +12,8 @@ int main(int argc, char *argv[])
 	char buff[BUFSIZ];
 
 	if (argc != 3)
-	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
-	}
 	ffrom = open(argv[1], O_RDONLY);
 	if (ffrom  == -1)
 	{
@@ -48,4 +46,5 @@ int main(int argc, char *argv[])
 		}
 		exit(100);
 	}
+	return (0);
 }
