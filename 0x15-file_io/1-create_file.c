@@ -8,7 +8,8 @@
  *         Otherwise - 1.
  */
 int create_file(const char *filename, char *text_content)
-{int o, w, len = 0;
+{
+	int o, w, len = 0;
 
 	if (filename == NULL)
 	{
@@ -29,7 +30,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	close (o);
+	close(o);
 
 	return (1);
 }
